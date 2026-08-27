@@ -4,6 +4,7 @@ bin/
 
 # Third party sources (cloned via git as per README)
 third_party/
+!third_party/stb_image.h
 
 # Compiled object files and binaries
 *.o

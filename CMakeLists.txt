@@ -107,6 +107,7 @@ target_compile_options(usrp_relay_gui PRIVATE -Wall -Wextra -O2)
 add_executable(usrp_sink_gui
     src/sink_main.cpp
     src/operator_console_gui.cpp
+    src/osm_slippy_map.cpp
     src/audio_player.cpp
     src/multichannel_demux.cpp
     src/multichannel_gui.cpp

@@ -12,10 +12,14 @@
 #include <string>
 #include <vector>
 
+#include "audio_player.h"
+#include "fft_processor.h"
 #include "multichannel_demux.h"
+#include "net_protocol.h"
+#include "osm_slippy_map.h"
+#include "ring_buffer.h"
 #include "status_provider.h"
 #include "synthetic_telemetry.h"
-#include "audio_player.h"
 
 struct GLFWwindow;
 
@@ -176,6 +180,9 @@ private:
     // Audio Player & Visualizer
     AudioPlayer audio_player_;
     float audio_vis_buf_[128];
+
+    // OpenStreetMap (OSM) & Slippy Map Engine
+    OsmSlippyMap osm_map_;
 
     SyntheticTelemetryEngine local_fallback_engine_;
 };
